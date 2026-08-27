@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Якщо декілька водіїв їдуть до одного місця, вибір призначення синхронізується." />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Припаркуватися після закінчення" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Доступне лише в режимах «Завантаження та Постачання» і «Постачання»: після завершення робіт обладнання буде направлено на заздалегідь відведене місце для стоянки автомобіля/навісного обладнання. На Dedi-Server доступне лише місце для паркування автомобіля!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Заправтеся перед поїздкою на парковку" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Якщо рівень палива менше 90%, заїдьте на заправку перед паркуванням." />
 		<text name="gui_ad_autoTipSide"								text="Автовибір сторони розвантаження" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Так - AutoDrive автоматично вибирає сторону розвантаження / Ні - використовуватиме вже вибрану сторону розвантаження." />
 		<text name="gui_ad_autoTrailerCover"							text="Тенти на причепах" />

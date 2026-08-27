@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Meerdere bestuurders die dezelfde map gebruiken voor meerdere doelen, die synchroniseren de voldende bestemmingen" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Parkeer wanneer de klus geklaard is" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Alleen beschikbaar in modus Ophalen en Afleveren, Afleveren: Als de taak is voltooid, wordt er naar de opgeslagen parkeerpositie van het voertuig / wwerktuig gereden. Op Dedi-Server alleen beschikbaar voor voertuig parkeerplaats!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Tanken voordat je naar de parkeerplaats rijdt" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Als het brandstofniveau onder 90% is, rijd dan eerst naar het tankstation voordat je parkeert." />
 		<text name="gui_ad_autoTipSide"								text="Automatische kantelkant" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Ja - AutoDrive selecteerd kantelkant automatisch / Nee - de al geselecteerde kantelkant wordt gebruikt" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatische aanhangwagen afdekking" />

@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Vários condutores usando a mesma pasta para múltiplos alvos sincronizarão os próximos alvos" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Estacionar no Trabalho concluído" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Apenas disponível em Modos Coleta e Entrega, Entrega: Se o trabalho estiver terminado, o veículo / equipamento será conduzido até à posição de estacionamento guardado. No Dedi-Server apenas disponível para o lugar de estacionamento do veículo!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Abasteça antes de dirigir até o estacionamento" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Se o nível de combustível estiver abaixo de 90%, vá até o posto de gasolina antes de estacionar." />
 		<text name="gui_ad_autoTipSide"								text="Lado da porta automática" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Sim - o AutoDrive seleciona automaticamente o lado da porta / Não - o lado da porta já selecionado será utilizado" />
 		<text name="gui_ad_autoTrailerCover"							text="Cobertura automática de atrelados" />

@@ -88,6 +88,12 @@
 				<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_gui_ad_enableParkAtJobFinished"/>
 			</Bitmap>
 			<Bitmap profile="fs25_multiTextOptionContainer" onCreate="onCreateAutoDriveSettingRow">
+				<BinaryOption profile="fs25_settingsBinaryOption" onClick="onOptionChange" onCreate="onCreateAutoDriveSetting" name="enableRefuelBeforePark" id="enableRefuelBeforePark">
+					<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_gui_ad_enableRefuelBeforePark_tooltip"/>
+				</BinaryOption>
+				<Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_gui_ad_enableRefuelBeforePark"/>
+			</Bitmap>
+			<Bitmap profile="fs25_multiTextOptionContainer" onCreate="onCreateAutoDriveSettingRow">
 				<BinaryOption profile="fs25_settingsBinaryOption" onClick="onOptionChange" onCreate="onCreateAutoDriveSetting" name="autoTipSide" id="autoTipSide">
 					<Text profile="fs25_multiTextOptionTooltip" name="ignore" text="$l10n_gui_ad_autoTipSide_tooltip"/>
 				</BinaryOption>

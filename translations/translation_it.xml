@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Più autisti che utilizzano la stessa cartella per più obiettivi sincronizzeranno gli obiettivi successivi" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Parcheggia a lavoro finito" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Disponibile solo nelle modalità Ritiro e consegna, consegna: se il lavoro è terminato, verrà raggiunta la posizione di parcheggio memorizzata del veicolo / attrezzatura. Su Dedi-Server disponibile solo per parcheggio auto!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Fai rifornimento prima di guidare verso il parcheggio" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Se il livello di carburante è sotto il 90%, vai alla stazione di rifornimento prima di parcheggiare." />
 		<text name="gui_ad_autoTipSide"								text="Selezione lato automatico" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Sì - AutoDrive seleziona automaticamente il lato da usare / No - verrà utilizzato il lato già selezionato" />
 		<text name="gui_ad_autoTrailerCover"							text="Copertura automatica del rimorchio" />

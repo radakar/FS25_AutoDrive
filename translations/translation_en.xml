@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Multiple drivers using the same folder for multiple targets will synchronize next targets" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Park at Job finished" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Only available in Modes Pickup and Deliver, Deliver: If Job is finished, stored parking position of vehicle / attachment will be driven to. On Dedi-Server only available for vehicle parking place!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Refuel before driving to Parking" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="If fuel level is below 90%, drive to refuel station before parking" />
 		<text name="gui_ad_autoTipSide"								text="Automatic Tip Side" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Yes - AutoDrive select tip side automatically / No - the already selected tip side will be used" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatic Trailer Covers" />

@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Wenn mehrere Fahrer die selben Ziele anfahren, wird die Zielauswahl synchronisiert." />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Am Ende parken" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Nur in Modi Abholen und Abliefern, Abladen: Wenn Aufgabe beendet, wird die gespeicherte Parkposition des aktuell gewählten Fahrzeug / Anhänger / Anbaugerät angefahren. Auf Dedi-Servern nur für Fahrzeug-Parkplatz!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Tanke auf, bevor du zum Parkplatz fährst" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Wenn der Tankstand unter 90 % liegt, fahre zur Tankstelle, bevor du parkst." />
 		<text name="gui_ad_autoTipSide"								text="Automatische Abladeseite" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Ja - AutoDrive wählt Abladeseite automatisch / Nein - die gewählte Abladeseite wird verwendet." />
 		<text name="gui_ad_autoTrailerCover"							text="Automatische Abdeckungen" />

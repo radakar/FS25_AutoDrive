@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="如果几个司机开车到同一个目的地，目的地选择是同步的。" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="工作完成后停车" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="仅在装载和卸载模式下可用，装载：如果作业完成，车辆/机具将接近到保存的停放位置。 在 Dedi-Server 上仅适用于停车！" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="开车去停车前先加油" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="如果油量低于90%，开车去加油站再停车" />
 		<text name="gui_ad_autoTipSide"								text="自动卸料侧" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="是 - AutoDrive 自动选择卸载侧 / 否 - 使用选定的卸载侧" />
 		<text name="gui_ad_autoTrailerCover"							text="自动拖车盖" />

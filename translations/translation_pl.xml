@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Różni kierowcy wykorzystujący ten sam folder do różnych celów zsynchronizują następny cel" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Zaparkuj po zakończeniu pracy" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Dostępne tylko w trybach odbioru i dostarczania, dostarczanie: po ukończeniu zadania, pojazd / narzędzie będzie odstawiony na swoje miejsce parkowania. Na serwerze dedykowanym działa tylko dla miejsca parkowania pojazdu!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Tankuj przed jazdą na parking" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Jeśli poziom paliwa jest poniżej 90%, najpierw jedź na stację paliw, zanim zaparkujesz." />
 		<text name="gui_ad_autoTipSide"								text="Automatyczna strona wyładowania" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Tak - AutoDrive automatycznie wybiera stronę wyładowywania / Nie - używana jest obecnie wybrana strona wyładowywania" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatyczna plandeka na przyczepie" />

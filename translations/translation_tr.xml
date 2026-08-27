@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Birden çok hedef için aynı klasörü kullanan birden çok sürücü, sonraki hedefleri senkronize edecek" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Park işi tamamlandı" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Yalnızca Alma ve Teslim Et, Teslim Et Modlarında mevcuttur: İş bittiğinde, aracın / ataşmanın depolanmış park konumuna sürülür. Dedi-Server'da sadece araç park yeri için mevcuttur!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Park etmeden önce yakıt al" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Yakıt seviyesi %90'ın altındaysa, park etmeden önce benzin istasyonuna git." />
 		<text name="gui_ad_autoTipSide"								text="Otomatik Boşaltma Tarafı" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Evet - AutoDrive otomatik olarak boşaltma tarafını seç / Hayır - önceden seçilmiş olan boşaltma tarafı kullanılacaktır" />
 		<text name="gui_ad_autoTrailerCover"							text="Otomatik römork kapakları" />

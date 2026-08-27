@@ -516,7 +516,7 @@ function ADInputManager:input_parkVehicle(vehicle, farmId)
             end
         end
 
-        if needsRefuel then
+        if needsRefuel and AutoDrive.getSetting("enableRefuelBeforePark", vehicle) then
 
             print("AutoDrive Park: fuel below 90%% - refueling first")
 

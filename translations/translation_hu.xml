@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Több útvonal, amely ugyanazt a mappát használja több célhoz, szinkronizálja a következő célokat" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Parkolás a végén" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Csak az Átvétel és kézbesítés, kézbesítés módokban érhető el: Ha a munka befejeződött, a jármű / tartozék tárolt parkolási pozíciójába kerül. A Dedi-Server-en csak a jármű parkolóhelye áll rendelkezésre!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Tankolj, mielőtt a parkolóba mennél" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Ha a tank szintje 90% alatti, menj előbb a benzinkúthoz, mielőtt parkolsz." />
 		<text name="gui_ad_autoTipSide"								text="Automatikus billentési oldal" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Igen - Az AutoDrive automatikusan kiválasztja a billentési oldalt / Nem - a már kiválasztott billentési oldalt fogja használni" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatikus pótkocsi fedél " />

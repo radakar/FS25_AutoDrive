@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Více řidičů používá stejnou složku s více cíly a budou  sychronizovány s dalšími cíly" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Zaparkovat po dokončení práce" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="K dispozici pouze v režimech Vyzvednutí a doručení, Doručit: Je-li úloha dokončena, bude vozidlo přistaveno na uloženou parkovací pozici / u závěsoviny na jeho určené místo. Na dedikovaném server je k dispozici pouze pro parkovací místo vozidla!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Natankujte před jízdou na parkoviště" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Pokud je palivo pod 90 %, dojeďte nejdřív na čerpací stanici, než zaparkujete." />
 		<text name="gui_ad_autoTipSide"								text="Automatická volba strany vykládky" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Ano - AutoDrive automaticky vybere stranu vykládky / Ne - použije se již vybraná strana vykládky" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatické plachtování přívěsu" />

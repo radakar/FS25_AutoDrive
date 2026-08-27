@@ -996,6 +996,17 @@ AutoDrive.settings.enableParkAtJobFinished = {
     isVehicleSpecific = true
 }
 
+AutoDrive.settings.enableRefuelBeforePark = {
+    values = {false, true},
+    texts = {"gui_ad_no", "gui_ad_yes"},
+    default = 1,
+    current = 1,
+    text = "gui_ad_enableRefuelBeforePark",
+    tooltip = "gui_ad_enableRefuelBeforePark_tooltip",
+    translate = true,
+    isVehicleSpecific = true
+}
+
 AutoDrive.settings.autoTipSide = {
     values = {false, true},
     texts = {"gui_ad_no", "gui_ad_yes"},

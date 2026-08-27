@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Flere kører, der bruger den samme mappe til flere mål, synkroniserer de næste mål" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Parker ved afsluttet job" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Kun tilgængelig i tilstande Opfyld og Lever, Lever: Hvis job er færdig, køres til den lagrede parkeringsposition for køretøjet / redskabet til. På Dedi-Server kun tilgængelig for maskin parkeringsplads!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Tank op, inden du kører til parkering" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Hvis brændstofniveauet er under 90%, kør til tankstationen, før du parkerer." />
 		<text name="gui_ad_autoTipSide"								text="Automatisk Tip Side" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Ja - AutoDrive vælger tipside automatisk / Nej - den allerede valgte tipside bruges" />
 		<text name="gui_ad_autoTrailerCover"							text="Automatisk Trailer Presseninger" />

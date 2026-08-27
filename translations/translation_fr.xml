@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Plusieurs conducteurs utilisant le même dossier pour plusieurs destination synchroniseront les destinations suivantes" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Se garer à la fin du travail" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Disponible uniquement dans les modes 'Collecte et livraison' ou 'livraison'. A la fin du travail, le véhicule et son outil rejoindront leur parking attribué. Sur un Serveur-dedié, disponible uniquement pour le parking véhicule." />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Fais le plein avant de te garer" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Si le niveau de carburant est inférieur à 90 %, va à la station-service avant de te garer." />
 		<text name="gui_ad_autoTipSide"								text="Côté auto de déchargement" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Oui - AutoDrive sélectionne automatiquement le côté pour vider / Non - le côté pour vider déjà sélectionné sera utilisé" />
 		<text name="gui_ad_autoTrailerCover"							text="Bâches remorques automatique" />

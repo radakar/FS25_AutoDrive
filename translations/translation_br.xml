@@ -242,6 +242,8 @@
 		<text name="gui_ad_syncMultiTargets_tooltip"					text="Vários motoristas usando a mesma pasta para vários destinos sincronizarão os próximos destinos" />
 		<text name="gui_ad_enableParkAtJobFinished"					text="Estacionar após trabalho finalizado" />
 		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Disponível apenas nos Modos Coleta e Entrega, Entrega: Se o Trabalho for concluído, a posição de estacionamento armazenada do veículo / acessório será conduzida. No servidor disponível apenas para estacionamento de veículos!" />
+		<text name="gui_ad_enableRefuelBeforePark"					text="Abasteça antes de dirigir até o estacionamento" />
+		<text name="gui_ad_enableRefuelBeforePark_tooltip"			text="Se o nível de combustível estiver abaixo de 90%, vá até o posto para reabastecer antes de estacionar." />
 		<text name="gui_ad_autoTipSide"								text="Lado automático" />
 		<text name="gui_ad_autoTipSide_tooltip"						text="Sim - AutoDrive seleciona o lado automaticamente / Não - o lado já selecionado será usado" />
 		<text name="gui_ad_autoTrailerCover"							text="Cobertura Automática da carreta" />
