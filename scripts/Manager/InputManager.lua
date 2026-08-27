@@ -474,19 +474,103 @@ function ADInputManager:input_callDriver(vehicle)
 end
 
 function ADInputManager:input_parkVehicle(vehicle, farmId)
+    print("========== INPUTPARK VEHICLE CODE ==========")
     local actualParkDestination = vehicle.ad.stateModule:getParkDestinationAtJobFinished()
+
     if actualParkDestination >= 1 then
-        vehicle.ad.stateModule:setFirstMarker(actualParkDestination)
-        AutoDrive:StopCP(vehicle)
-        if vehicle.ad.stateModule:isActive() then
-            self:input_start_stop(vehicle, farmId) --disable if already active
+
+        -- Check if the vehicle has a fuel type that AutoDrive considers refuelable
+        local refuelFillTypes = AutoDrive.getRequiredRefuels(vehicle, true)
+        local needsRefuel = false
+
+        if #refuelFillTypes > 0 then
+
+            for _, fillType in ipairs(refuelFillTypes) do
+
+                for _, fillUnit in ipairs(vehicle:getFillUnits()) do
+
+                    local fillUnitIndex = fillUnit.fillUnitIndex
+                    local currentFillType = vehicle:getFillUnitFillType(fillUnitIndex)
+
+                    if currentFillType == fillType then
+
+                        local fuelPercentage =
+                            vehicle:getFillUnitFillLevelPercentage(fillUnitIndex)
+
+                        print(string.format(
+                            "AutoDrive Park: %s fuel level = %.1f%%",
+                            g_fillTypeManager:getFillTypeByIndex(fillType).name,
+                            fuelPercentage
+                        ))
+
+                        if fuelPercentage < 90 then
+                            needsRefuel = true
+                            break
+                        end
+                    end
+                end
+
+                if needsRefuel then
+                    break
+                end
+            end
         end
+
+        if needsRefuel then
+
+            print("AutoDrive Park: fuel below 90%% - refueling first")
+
+            -- Remember the original parking destination
+            vehicle.ad.parkDestinationAfterRefuel = actualParkDestination
+
+            -- Find the closest refueling station
+            local refuelDestination =
+                ADTriggerManager.getClosestRefuelDestination(vehicle, true)
+
+            if refuelDestination ~= nil and refuelDestination >= 1 then
+
+                AutoDrive:StopCP(vehicle)
+
+                if vehicle.ad.stateModule:isActive() then
+                    self:input_start_stop(vehicle, farmId)
+                end
+
+                vehicle.ad.stateModule:setMode(AutoDrive.MODE_DRIVETO)
+
+                vehicle.ad.onRouteToRefuel = true
+
+                self:input_start_stop(vehicle, farmId)
+
+                return
+            end
+        end
+
+        -- Normal parking
+        vehicle.ad.stateModule:setFirstMarker(actualParkDestination)
+
+        AutoDrive:StopCP(vehicle)
+
+        if vehicle.ad.stateModule:isActive() then
+            self:input_start_stop(vehicle, farmId)
+        end
+
         vehicle.ad.stateModule:setMode(AutoDrive.MODE_DRIVETO)
+
         self:input_start_stop(vehicle, farmId)
+
         vehicle.ad.onRouteToPark = true
+
     else
+
         vehicle.ad.onRouteToPark = false
-        AutoDriveMessageEvent.sendMessageOrNotification(vehicle, ADMessagesManager.messageTypes.ERROR, "$l10n_AD_Driver_of; %s $l10n_AD_parkVehicle_noPosSet;", 5000, vehicle.ad.stateModule:getName())
+
+        AutoDriveMessageEvent.sendMessageOrNotification(
+            vehicle,
+            ADMessagesManager.messageTypes.ERROR,
+            "$l10n_AD_Driver_of; %s $l10n_AD_parkVehicle_noPosSet;",
+            5000,
+            vehicle.ad.stateModule:getName()
+        )
     end
 end
 

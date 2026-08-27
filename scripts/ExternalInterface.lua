@@ -1,5 +1,5 @@
 AutoDrive.destinationListeners = {}
-
+print("========== MY ExternalInterface.lua LOADED ==========")
 --startX, startZ: World location
 --startYRot: rotation in rad
 --destinationID: ID of marker to find path to
@@ -112,6 +112,9 @@ function AutoDrive:GetClosestPointToLocation(x, z, minDistance)
 end
 
 function AutoDrive:StartDriving(vehicle, destinationID, unloadDestinationID, callBackObject, callBackFunction, callBackArg)
+
+    print("========== MY AUTODRIVE PARK CODE ==========")
+
     AutoDrive.debugPrint(vehicle, AutoDrive.DC_EXTERNALINTERFACEINFO, "AutoDrive:StartDriving(%s, %s, %s, %s, %s)", destinationID, unloadDestinationID, callBackObject, callBackFunction, callBackArg)
     if vehicle ~= nil and vehicle.ad ~= nil and not vehicle.ad.stateModule:isActive() then
         vehicle.ad.callBackObject = callBackObject
@@ -127,6 +130,9 @@ function AutoDrive:StartDriving(vehicle, destinationID, unloadDestinationID, cal
                 vehicle.ad.stateModule:setSecondMarker(unloadDestinationID)
                 vehicle.ad.stateModule:getCurrentMode():start()
             elseif unloadDestinationID == -3 then --park
+
+                print("========== MY AUTODRIVE IS PARKING ==========")
+
                 local parkDestinationAtJobFinished = vehicle.ad.stateModule:getParkDestinationAtJobFinished()
                 if parkDestinationAtJobFinished >= 1 then
                     local trailers, _ = AutoDrive.getAllUnits(vehicle)
