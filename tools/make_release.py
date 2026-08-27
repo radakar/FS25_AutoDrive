@@ -8,7 +8,7 @@ if __name__ == "__main__":
     archive_path = repo_root / "FS25_AutoDrive.zip"
     gitignore_path = repo_root / ".gitignore"
 
-    ignored = ["/.git", "/tools", "/credits.txt", "/.gitignore"]
+    ignored = ["/.git", "/.github", "/tools", "/credits.txt", "/.gitignore"]
     if gitignore_path.exists():
         ignored.extend(gitignore_path.read_text().splitlines())
 
